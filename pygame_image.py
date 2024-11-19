@@ -23,11 +23,11 @@ def main():
         key_lst = pg.key.get_pressed()
         if key_lst[pg.K_UP]:
             kk_rct.move_ip((0, -1))
-        if key_lst[pg.K_DOWN]:
+        elif key_lst[pg.K_DOWN]:
             kk_rct.move_ip((0, 1))
-        if key_lst[pg.K_LEFT]:
+        elif key_lst[pg.K_LEFT]:
             kk_rct.move_ip((-1, 0))
-        if key_lst[pg.K_RIGHT]:
+        elif key_lst[pg.K_RIGHT]:
             kk_rct.move_ip((1, 0))
         else:
             kk_rct.move_ip(-1, 0)  # キーが押されていない場合は左に移動
