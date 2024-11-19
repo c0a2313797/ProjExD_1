@@ -27,6 +27,8 @@ def main():
         pg.display.update()
         tmr += 1        
         clock.tick(1)
+        if  tmr >=10:
+            break
 
 
 if __name__ == "__main__":
